@@ -1,2 +1,2 @@
 # Social-Media-Dashboard
-Course from youtube
+Sass project
