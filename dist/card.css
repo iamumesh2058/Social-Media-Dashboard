@@ -1,0 +1,108 @@
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.875rem;
+}
+@media screen and (min-width: 40em) {
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 71.875em) {
+  .card-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  width: 100%;
+  background: var(--card-background);
+  color: var(--text-color2);
+  text-align: center;
+  padding: 1.5625rem;
+  margin: auto;
+  border-radius: 0.3125rem;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+.card:hover {
+  background: var(--card-hover);
+}
+.card--facebook {
+  border-top: 5px solid var(--facebook);
+}
+.card--twitter {
+  border-top: 5px solid var(--twitter);
+}
+.card--instagram {
+  position: relative;
+  padding-top: 1.875rem;
+}
+.card--instagram::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.3125rem;
+  background: linear-gradient(255deg, var(--instagram-end), var(--instagram-middle) 50.91%, var(--instagram-start) 100%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card--youtube {
+  border-top: 5px solid var(--youTube);
+}
+.card__platform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.25rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 1.75rem;
+}
+.card__icon {
+  margin-right: 0.5rem;
+}
+.card__username {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.card__followers {
+  margin-bottom: 1.5625rem;
+}
+.card__count {
+  color: var(--text-color1);
+  font-weight: 700;
+  letter-spacing: -0.125rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+.card__count--big {
+  font-size: 3.5rem;
+}
+.card__count--small {
+  font-size: 2rem;
+}
+.card__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-color2);
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+}
+.card__change {
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__change--up {
+  color: var(--limegreen);
+}
+.card__change--down {
+  color: var(--brightred);
+}
+.card__change img {
+  margin-right: 0.25rem;
+}/*# sourceMappingURL=card.css.map */
