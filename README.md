@@ -8,3 +8,15 @@ Sass (Syntactically Awesome Stylesheets) serves as an extension to CSS, function
 # Dark Mode
 ![image](https://github.com/iamumesh2058/Social-Media-Dashboard/assets/101959977/5145d054-a8ca-4963-b046-b6b88bbbd9b8)
 
+## Tech Stack
+- JavaScript
+- Sass
+
+## Knowledge gained
+- Prefers Color Scheme
+  > The prefers-color-scheme CSS media feature is used to detect if user has requested dark theme or light theme on the basis of their operating system's theme preferences.
+- Saas general folder structure to maintain smooth workflow.
+- Nested Styling with BEM
+- Sass Variables, @import, @use, @forward
+- @mixin, @extend, @function
+- General overview of Gulp
